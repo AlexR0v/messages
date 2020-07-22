@@ -2,16 +2,12 @@ import { defineMessages } from 'react-intl'
 
 
 export default defineMessages({
-  home: {
-    id: 'home',
-    defaultMessage: 'Главная'
+  linkSignUp: {
+    id: 'linkSignUp',
+    defaultMessage: 'Еще не зарегистрированы?'
   },
-  signUp: {
-    id: 'signUp',
-    defaultMessage: 'Зарегистрироваться'
-  },
-  signIn: {
-    id: 'signIn',
+  buttonSignIn: {
+    id: 'buttonSignIn',
     defaultMessage: 'Войти'
   }
 })
