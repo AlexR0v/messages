@@ -8,5 +8,5 @@ export const Input = styled('input')(() => ({
   borderRadius: '5px',
   color: theme.color.gray,
   fontSize: theme.fontSize.l,
-  paddingLeft: '15px'
+  paddingLeft: '25px'
 }))

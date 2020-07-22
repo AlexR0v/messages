@@ -8,7 +8,7 @@ export default defineMessages({
   },
   signUp: {
     id: 'signUp',
-    defaultMessage: 'Зарегистрироваться'
+    defaultMessage: 'Регистрация'
   },
   signIn: {
     id: 'signIn',
