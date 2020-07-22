@@ -3,7 +3,7 @@ import { theme } from './theme'
 import { ifProp } from 'styled-tools'
 
 export const Button = styled('button')(() => ({
-  width: '107px',
+  minWidth: '107px',
   height: '54px',
   color: theme.color.white,
   fontSize: theme.fontSize.l,
@@ -16,6 +16,4 @@ export const Button = styled('button')(() => ({
   color: theme.color.whiteGrey,
   background: theme.color.gray,
   cursor: 'default'
-}))
-
-)
+})))

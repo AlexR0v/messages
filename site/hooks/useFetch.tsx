@@ -20,15 +20,13 @@ export default (url: any): any => {
       return
     }
 
-    axios(baseUrl + url, options).then(res => {
-      console.log('удачно', res)
-      setIsLoading(false)
+    axios(baseUrl + url, options)
+      .then(res => {
       setResponse(res.data)
-
-    }).catch(err => {
-      console.log('ошибка', err)
       setIsLoading(false)
-      setError(err.response.data)
+    }).catch(error => {
+      setError(error.response.data)
+      setIsLoading(false)
     })
   }, [isLoading])
 
