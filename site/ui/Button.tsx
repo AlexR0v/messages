@@ -1,5 +1,6 @@
 import styled from '@emotion/styled'
 import { theme } from './theme'
+import { ifProp } from 'styled-tools'
 
 export const Button = styled('button')(() => ({
   width: '107px',
@@ -11,4 +12,10 @@ export const Button = styled('button')(() => ({
   borderRadius: '5px',
   cursor: 'pointer',
   ':hover': {color: theme.color.whiteGrey}
+}), ifProp('disabled', ()=>({
+  color: theme.color.whiteGrey,
+  background: theme.color.gray,
+  cursor: 'default'
 }))
+
+)
